@@ -57,7 +57,7 @@ const NewProperty = () => {
         formData.append(key, String(value));
       }
     });
-
+    
     formData.append("managerCognitoId", authUser.cognitoInfo.userId);
 
     await createProperty(formData);
