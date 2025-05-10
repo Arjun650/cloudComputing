@@ -22,7 +22,7 @@
     "averageRating": 4.5,
     "numberOfReviews": 10,
     "locationId": 1,
-    "managerCognitoId": "a143ddda-1021-7004-9032-15a478d19c8a"
+    "managerCognitoId": "010be580-60a1-70ae-780e-18a6fd94ad32"
   },
   {
     "id": 2,
@@ -72,7 +72,7 @@
     "averageRating": 4.7,
     "numberOfReviews": 8,
     "locationId": 3,
-    "managerCognitoId": "a143ddda-1021-7004-9032-15a478d19c8a"
+    "managerCognitoId": "us-east-2:34567890-90ab-cdef-1234-567890abcdef"
   },
   {
     "id": 4,
