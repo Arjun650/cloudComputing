@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Sunny Downtown Apartment",
+    "name": "Amrita Downtown Apartment",
     "description": "A beautiful apartment in the heart of downtown with plenty of natural light.",
     "pricePerMonth": 1500.0,
     "securityDeposit": 1500.0,
@@ -22,7 +22,7 @@
     "averageRating": 4.5,
     "numberOfReviews": 10,
     "locationId": 1,
-    "managerCognitoId": "010be580-60a1-70ae-780e-18a6fd94ad32"
+    "managerCognitoId": "a143ddda-1021-7004-9032-15a478d19c8a"
   },
   {
     "id": 2,
@@ -248,5 +248,32 @@
     "numberOfReviews": 8,
     "locationId": 10,
     "managerCognitoId": "us-east-2:01234567-90ab-cdef-1234-567890abcdef"
-  }
+  },
+  {
+  "id": 11,
+  "name": "Karnataka Villa",
+  "description": "Sustainable living in a compact, well-designed tiny house.",
+    "pricePerMonth": 900.0,
+    "securityDeposit": 900.0,
+    "applicationFee": 35.0,
+    "photoUrls": [
+      "https://example.com/tinyhouse1.jpg",
+      "https://example.com/tinyhouse2.jpg"
+    ],
+    "amenities": ["WasherDryer", "AirConditioning", "HighSpeedInternet"],
+    "highlights": ["SmokeFree"],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 1,
+    "squareFeet": 250,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2023-08-10T00:00:00Z",
+    "averageRating": 4.7,
+    "numberOfReviews": 8,
+    "locationId": 12,
+    "managerCognitoId": "a143ddda-1021-7004-9032-15a478d19c8a"
+}
+
+  
 ]

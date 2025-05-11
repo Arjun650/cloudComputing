@@ -88,5 +88,15 @@
     "address": "789 Rodeo Dr",
     "postalCode": "90210",
     "coordinates": "POINT(-118.400356 34.073620)"
-  }
+  },
+  {
+  "id": 12,
+  "country": "India",
+  "city": "Bangalore",
+  "state": "Karnataka",
+  "address": "MG Road, Bangalore",
+  "postalCode": "560001",
+  "coordinates": "POINT(77.594566 12.971599)"
+}
+
 ]
