@@ -1,30 +1,30 @@
 import { Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
-import AWS from "aws-sdk"
+// import AWS from "aws-sdk"
 const prisma = new PrismaClient();
 
-AWS.config.update({
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  region: process.env.AWS_REGION,
-});
+// AWS.config.update({
+//   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+//   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+//   region: process.env.AWS_REGION,
+// });
 
-const sns = new AWS.SNS(); 
+// const sns = new AWS.SNS(); 
 
-const sendSMSNotification = async(phoneNumber: string, message: string) =>{
-  const params = {
-    Message: message, 
-    PhoneNumber: phoneNumber
-  }; 
+// const sendSMSNotification = async(phoneNumber: string, message: string) =>{
+//   const params = {
+//     Message: message, 
+//     PhoneNumber: phoneNumber
+//   }; 
 
-  try{
-    const result = await sns.publish(params).promise(); 
-    console.log(result)
-  }
-  catch(err){
-    console.error("Error sending msg", err)
-  }
-}
+//   try{
+//     const result = await sns.publish(params).promise(); 
+//     console.log(result)
+//   }
+//   catch(err){
+//     console.error("Error sending msg", err)
+//   }
+// }
 
 export const listApplications = async (
   req: Request,
@@ -245,9 +245,9 @@ export const updateApplicationStatus = async (
         },
       });
 
-      const tenantPhoneNumber = "+919661798904"; 
-      const message = "Your booking has been approved! Thank you for choosing us"
-      await sendSMSNotification(tenantPhoneNumber, message); 
+      // const tenantPhoneNumber = "+919661798904"; 
+      // const message = "Your booking has been approved! Thank you for choosing us"
+      // await sendSMSNotification(tenantPhoneNumber, message); 
     } else {
       // Update the application status (for both "Denied" and other statuses)
       await prisma.application.update({
